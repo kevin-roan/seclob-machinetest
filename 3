@@ -1,0 +1,54 @@
+import { RxDashboard } from "react-icons/rx";
+import { MdDriveFolderUpload } from "react-icons/md";
+import { FaFileInvoice } from "react-icons/fa";
+import { GrScheduleNew } from "react-icons/gr";
+import { SlCalender } from "react-icons/sl";
+import { IoMdNotifications } from "react-icons/io";
+import { FaGear } from "react-icons/fa6";
+
+function Sidebar() {
+  return (
+    <aside className="border w-[20vmax] h-screen ">
+      <div className="flex items-center gap-4 px-4 py-4">
+        <img
+          alt="logo"
+          className="h-20"
+          src="https://static.vecteezy.com/system/resources/thumbnails/017/398/788/small/white-circle-free-png.png"
+        />
+        <h2 className="text-2xl font-medium">Base</h2>
+      </div>
+      <div className="flex flex-col list-none">
+        <li className="border rounded-md hover:bg-[var(--primary-color)] flex items-center py-2 m-4 justify-center gap-4 ">
+          <RxDashboard />
+          Dashboard
+        </li>
+        <li>
+          <MdDriveFolderUpload />
+          Upload
+        </li>
+        <li>
+          <FaFileInvoice />
+          Invoice
+        </li>
+        <li>
+          <GrScheduleNew />
+          Schedule
+        </li>
+        <li>
+          <SlCalender />
+          Calender
+        </li>
+        <li>
+          <IoMdNotifications />
+          Notification
+        </li>
+        <li>
+          <FaGear />
+          Settigs
+        </li>
+      </div>
+    </aside>
+  );
+}
+
+export default Sidebar;

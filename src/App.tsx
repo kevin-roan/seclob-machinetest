@@ -1,7 +1,8 @@
 import "./styles/app.scss";
+import { Dashboard, Login } from "./pages";
 
 const App = () => {
-  return <h1>app</h1>;
+  return <Dashboard />;
 };
 
 export default App;
